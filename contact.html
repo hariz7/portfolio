@@ -84,6 +84,11 @@
                   action="https://formsubmit.co/harischinna333@gmail.com"
                   method="POST"
                 >
+                <!-- honeypot -->
+                <input type="text" name="_honey" style="display: none;" >
+                <!-- disable captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://hariz7.github.io/portfolio/contact.html">
                   <!-- Name input-->
                   <div class="form-floating mb-3">
                     <input
@@ -91,6 +96,7 @@
                       
                       id="name"
                       type="text"
+                      name="name"
                       placeholder="Enter your name..."
                       oninput="validatename()"
                       required
@@ -104,6 +110,7 @@
                       class="form-control"
                       id="email"
                       type="email"
+                      name="email"
                       placeholder="name@example.com"
                       required
                     />
@@ -115,6 +122,7 @@
                       class="form-control"
                       id="phone"
                       type="tel"
+                      name="phone"
                       placeholder="(123) 456-7890"
                       required
                     />
@@ -127,6 +135,7 @@
                       id="message"
                       type="text"
                       placeholder="Enter your message here..."
+                      name="message"
                       style="height: 10rem"
                       required
                     ></textarea>
